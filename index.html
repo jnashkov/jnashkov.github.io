@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/news.css">
+    <link rel="stylesheet" href="./style/resume.css">
+    <link rel="stylesheet" href="./style/services.css">
+    <link rel="stylesheet" href="./style/works.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="home-page">
+        <div class="splitscreen d-md-flex h-md-100 align-items-center">
+            <div class="col-md-6 p-0 bg-secondary h-md-100">
+                <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+                    <div class="logo-side pt-5 pb-5">                        
+                        <img class="rounded-circle mb-5" src="img/me.jpg" alt="myself">                        
+                        <p class="mb-5">Lorem ipsum dolor sit amet.</p>
+                        <button type="button" class="btn btn-outline-danger">Downlaod CV</button>
+                        <button type="button" class="btn btn-outline-danger">Contact Me</button>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-md-6 p-0 bg-light h-md-100">
+                <div class="text-dark d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+                    <div class="menu-side pt-5 pb-5">
+                        <ul id="menu" class="menu-list">
+                            <li class="menu-item">
+                                <a href="#about">about</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#resume">resume</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#services">services</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#works">works</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#news">news</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#contact">contact</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <section class="p-5 about animate__animated animate__slideInRight" id="about">
+                <div class="container shadow p-5">
+                    <div class="row pb-5">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="row pb-5">
+                        <div class="col-md-4 p-3 border">
+                            <img class="" src="./img/me.jpg" alt="some image" width="100%" height="100%"> 
+                        </div>
+                        <div class="col-md-8">
+                            <div>
+                                <h4>I'm Jovan Nashkov</h4>
+                                <h4 class="pb-2">Creative web designer</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero earum reiciendis molestiae maxime veniam, 
+                                    itaque ut molestias labore nobis, error minima deleniti modi. Autem hic in magni tempore accusamus nam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quia molestiae dolores accusantium nihil?
+                                    Facere, ipsum sequi! Distinctio atque aspernatur rerum et. Assumenda repellendus obcaecati odit harum ullam aperiam quis.</p>
+                                <div class="social-icons pt-2 pb-5">
+                                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <div class="col-md-6">
+                            <div class="skills">
+                                <h4>My Skills</h4>   
+                                <div class="skill">
+                                    <span>Linux</span>
+                                    <span class="float-right">55%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>    
+                                
+                                <div class="skill">
+                                    <span>Javascript</span>
+                                    <span class="float-right">25%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Angular</span>
+                                    <span class="float-right">35%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="languages">
+                                <h4>Languages</h4>
+                                <div class="language">
+                                    <span>English</span>
+                                    <span class="float-right">75%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="language">
+                                    <span>Spanish</span>
+                                    <span class="float-right">25%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="language">
+                                    <span>German</span>
+                                    <span class="float-right">15%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <div class="container">
+                            <h4>Testimonials</h4>
+
+                        </div>
+                        
+                        <!-- <div class="col-sm-12">
+                            
+                            <div class="container" id="carousel" class="carousel">
+                                <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                                    <div class="row">
+                                        <div class="carousel-controls d-flex align-items-end">
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>                                            
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="col-sm-6">
+                                                <div class="testimonial-wrapepr">
+                                                    <div class="testimonial">
+                                                        "If you want real marketing that works and effective implementation - web site's got you covered. I don't know what else to say."
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media-left d-flex mr-3">
+                                                            <img src="./img/female1.jpg" alt="female1">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <div class="overview">
+                                                                <div class="name"><b>Jenna Albion</b></div>
+                                                                <div class="details">Client</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="testimonial-wrapper">
+                                                    <div class="testimonial">
+                                                        "Definitely worth the investment. You've saved our business! Best. Product. Ever!"
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media-left d-flex mr-3">
+                                                            <img src="./img/male1.jpg" alt="male1">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <div class="overview">
+                                                                <div class="name"><b>Rick Mick</b></div>
+                                                                <div class="details">Client</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-sm-6">
+                                                <div class="testimonial-wrapper">
+                                                    <div class="testimonial">
+                                                        "Web site is worth much more than I paid. Needless to say we are extremely satisfied with the results. Needless to say we are extremely satisfied with the results. The best on the net!"
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media-left d-flex mr-3">
+                                                            <img src="./img/female2.jpg" alt="female2">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <div class="overview">
+                                                                <div class="name"><b>Alyson Stevens</b></div>
+                                                                <div class="details">Client</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="testimonial-wrapper">
+                                                    <div class="testimonial">
+                                                        "You've saved our business! Web site is awesome! Dude, your stuff is the bomb! It's just amazing. "
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="media-left d-flex mr-3">
+                                                            <img src="./img/male2.jpg" alt="male2">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <div class="overview">
+                                                                <div class="name"><b>Alex Romanov</b></div>
+                                                                <div class="details">Client</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>                        
+                        </div> -->
+                    </div>
+
+                    <div class="row pb-5">
+                        <h4>Fun Facts</h4>
+                    </div>
+                    <div class="row pb-5 text-center align-items-center">                                           
+                        <div class="col-md-3 p-3 border">
+                            <ion-icon class="about-icon" name="happy-outline"></ion-icon>
+                            <h3>150</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="col-md-3 p-3 border">
+                            <ion-icon class="about-icon" name="briefcase-outline"></ion-icon>
+                            <h3>10</h3>
+                            <p>years Experience</p>
+                        </div>
+                        <div class="col-md-3 p-3 border">
+                            <ion-icon class="about-icon" name="ribbon-outline"></ion-icon>
+                            <h3>10</h3>
+                            <p>Awards Won</p>
+                        </div>
+                        <div class="col-md-3 p-3 border">
+                            <ion-icon class="about-icon" name="thumbs-up-outline"></ion-icon>
+                            <h3>300</h3>
+                            <p>Projects Done</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="p-5 resume" id="resume">
+                <div class="container shadow">
+
+                </div>
+            </section>
+            <section class="p-5 services" id="services">
+                <div class="container shadow">
+
+                </div>
+            </section>
+            <section class="p-5 works" id="works">
+                <div class="container shadow p-5">
+                    <h2 class="pb-5 border-bottom">Portfolio</h2>
+                    <div id="buttons" class="m-2 pt-3 pb-3">
+                        <button type="button" class="btn btn-link active text-decoration-none" onclick="filterSelection('all')">All</button>
+                        <button type="button" class="btn btn-link text-decoration-none" onclick="filterSelection('coding')">Coding</button>
+                        <button type="button" class="btn btn-link text-decoration-none" onclick="filterSelection('design')">Design</button>
+                        <button type="button" class="btn btn-link text-decoration-none" onclick="filterSelection('logo')">Logo</button>
+                    </div>
+                    <div class="card-columns align-items-center">
+                        <div class="hovereffect mb-4" category="coding">
+                            <img class="img-responsive" src="./img/work-1.jpg" alt="">
+                            <div class="overlay">
+                                <p><a href="#">SHOW CODE</a></p>
+                            </div>
+                        </div> 
+                        <div class="hovereffect mb-4" category="coding">
+                            <img class="img-responsive" src="./img/work-2.jpg" alt="">
+                            <div class="overlay">
+                                <p><a href="#">SHOW CODE</a></p>
+                            </div>
+                        </div> 
+                        <div class="hovereffect mb-4" category="design">
+                            <img class="img-responsive" src="./img/work-3.jpg" alt="">
+                            <div class="overlay">
+                                <p><a href="#">SHOW CODE</a></p>
+                            </div>
+                        </div> 
+                        <div class="hovereffect mb-4" category="design">
+                            <img class="img-responsive" src="./img/work-4.jpg" alt="">
+                            <div class="overlay">
+                                <p><a href="#">SHOW CODE</a></p>
+                            </div>
+                        </div> 
+                        <div class="hovereffect mb-4" category="logo">
+                            <img class="img-responsive" src="./img/work-5.jpg" alt="">
+                            <div class="overlay">
+                                <p><a href="#">SHOW CODE</a></p>
+                            </div>
+                        </div> 
+                        <div class="hovereffect mb-4" category="logo">
+                            <img class="img-responsive" src="./img/work-6.jpg" alt="">
+                            <div class="overlay">
+                                <p><a href="#">SHOW CODE</a></p>
+                            </div>
+                        </div> 
+                    </div>   
+                </div>
+            </section>
+            <section class="p-5 news" id="news">
+                <div class="container shadow">
+
+                </div>
+            </section>
+            <section class="p-5 contact" id="contact">
+                <div class="container shadow p-5 h-100">
+                    <div class="row pb-5">
+                        <h2>Contact Me</h2>
+                    </div>
+                    <div class="row p-5">
+                        <div class="col-md-5">
+                            <h3 class="pb-5">Location</h3>
+                            <div class="embed-responsive embed-responsive-21by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11913.305840699062!2d21.775058275683293!3d41.71347381166162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1smk!2smk!4v1589730907722!5m2!1smk!2smk" 
+                                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="pb-5">Contact Form</h3>
+                            <form id="form" class="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control mb-3" name="name" placeholder="Your Name">
+                                    <input type="email" class="form-control mb-3" name="email" placeholder="E-Mail">
+                                    <textarea class="form-control mb-3" placeholder="Message"></textarea>
+                                    <button type="submit" class="btn btn-outline-danger">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-4">
+                            <ion-icon class="contact-icon" name="location-outline"></ion-icon>
+                            <p>Veles, MK</p>
+                        </div>
+                        <div class="col-md-4">
+                            <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
+                            <p>text@example.com</p>
+                        </div>
+                        <div class="col-md-4">
+                            <ion-icon class="contact-icon" name="call-outline"></ion-icon>
+                            <p>+123 456 789</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+</body>
+</html>
