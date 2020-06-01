@@ -6,10 +6,12 @@
     list-style-type: none;
 }
 
-.menu-item {
+.menu-item a {
     text-decoration: none;
+    color: inherit;
 }
 a:hover {
+    color: #FD0178;
     text-decoration: none;
 }
 

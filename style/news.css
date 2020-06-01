@@ -1,0 +1,39 @@
+@media (min-width:356px) {
+    .card-columns .news {
+      column-count: 1;
+    }
+}
+
+@media (min-width:576px) {
+    .card-columns .news {
+      column-count: 1;
+    }
+}
+  @media (min-width:768px) {
+    .card-columns .news {
+      column-count: 2;
+    }
+}
+@media (min-width:992px) {
+    .card-columns .news {
+      column-count: 2;
+    }
+}
+@media (min-width:1200px) {
+    .card-columns .news {
+      column-count: 4;
+    }
+}
+
+.news .card .card-body a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.news .card .card-body a:hover {
+    color: #FD0178;
+}
+
+.news .card .card-body h6 {
+    color: #FD0178;
+}

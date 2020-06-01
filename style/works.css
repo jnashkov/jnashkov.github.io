@@ -91,4 +91,12 @@
     display: none !important;
 }
 
+#buttons button {
+  text-decoration: none;
+  color: inherit;
+}
+
+#buttons button:hover {
+  color: #FD0178;
+}
 
