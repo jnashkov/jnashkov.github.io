@@ -86,3 +86,102 @@
     background: #fd0078;
     border: 5px double;
 }  */
+
+
+.slideshow-container__slides {
+    display: none;
+    height: 330px;
+  }
+  
+  /* slide animation */
+  .slide-left {
+    animation: slideLeft 1s ease-in-out
+  }
+  @keyframes slideLeft {
+    0% {
+      opacity:0;
+      transform: translateX(150%);
+    }
+    50%{
+      transform: translateX(-4%);
+    }
+    75%{
+      transform: translateX(2%);
+    }
+    100%{
+      opacity:1;
+      transform: translateX(0%);
+    }
+  }
+  
+  .slide-right{
+    visibility: visible !important;
+    animation: slideRight 1s ease-in-out
+  }
+  @keyframes slideRight {
+    0% {
+      opacity:0;
+      transform: translateX(-150%);
+    }
+    50%{
+      transform: translateX(4%);
+    }
+    75%{
+      transform: translateX(-2%);
+    }
+    100% {
+      opacity:1;
+      transform: translateX(0%);
+    }
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background: #eee;
+    overflow: hidden;
+  }
+  
+  /* Next & previous buttons */
+  .slideshow-container__prev, .slideshow-container__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* Position the "next button" to the right */
+  .slideshow-container__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .slideshow-container__prev:hover, .slideshow-container__next:hover {
+    color: #fff;
+    background-color: #333;
+  }
+  
+  /* Caption text */
+  .slideshow-container__text {
+    color: #333;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    transform: translate(0, -50%);
+  }

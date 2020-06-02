@@ -1,3 +1,37 @@
+// Front Page
+
+// Text Effect
+document.addEventListener('DOMContentLoaded',function(event){
+    var dataText = ['I am passionate developer.', 'I am creative designer.'];
+    function typeWriter(text, i, fnCallback) {
+      if (i < (text.length)) {
+       document.querySelector("p").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+        setTimeout(function() {
+          typeWriter(text, i + 1, fnCallback)
+        }, 100);
+      }
+      else if (typeof fnCallback == 'function') {
+        setTimeout(fnCallback, 700);
+      }
+    }
+     function StartTextAnimation(i) {
+       if (typeof dataText[i] == 'undefined'){
+          setTimeout(function() {
+            StartTextAnimation(0);
+          }, 1000);
+       }
+      if (i < dataText[i].length) {
+       typeWriter(dataText[i], 0, function(){
+         StartTextAnimation(i + 1);
+       });
+      }
+    }
+    StartTextAnimation(0);
+  });
+
+
+
+
 // animations
 
 // let animateAbout = document.getElementById('about');
@@ -34,8 +68,39 @@
 
 
 
+// Main Content
+
+
+
 // Testimonials Carousel
 
+let slideIndex = 1;
+showSlides(slideIndex,'slide-left');
+
+function plusSlides(n, animate) {
+  showSlides(slideIndex += n, animate);
+} 
+
+function showSlides(n,animate) {
+  let i;
+  //let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementById("slideshow-container").getElementsByClassName('slideshow-container__slides');
+
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].classList.remove('slide-left');
+  slides[slideIndex - 1].classList.remove('slide-right');
+  slides[slideIndex - 1].classList.add(animate);
+}
 
 
 

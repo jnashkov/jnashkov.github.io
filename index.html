@@ -17,17 +17,19 @@
 <body>
     <div class="home-page">
         <div class="splitscreen d-md-flex h-md-100 align-items-center">
-            <div class="col-md-6 p-0 bg-secondary h-md-100">
+            <div class="splitscreen-left col-md-6 p-0 bg-secondary h-md-100">
                 <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
                     <div class="logo-side pt-5 pb-5">                        
                         <img class="rounded-circle mb-5" src="img/me.jpg" alt="myself">                        
-                        <p class="mb-5">Lorem ipsum dolor sit amet.</p>
+                        <div class="mb-5">
+                            <p id="animated-text">Hello, I am Jovan Nashkov</p>
+                        </div>
                         <button type="button" class="btn btn-outline-danger">Downlaod CV</button>
                         <button type="button" class="btn btn-outline-danger">Contact Me</button>
                     </div>  
                 </div>
             </div>
-            <div class="col-md-6 p-0 bg-light h-md-100">
+            <div class="splitscreen-right col-md-6 p-0 bg-light h-md-100">
                 <div class="text-dark d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
                     <div class="menu-side pt-5 pb-5">
                         <ul id="menu" class="menu-list">
@@ -138,112 +140,41 @@
                     </div>
                     <div class="row pb-5">
                         <div class="container">
-                            <h4>Testimonials</h4>
-
-                        </div>
-                        
-                        <!-- <div class="col-sm-12">
-                            
-                            <div class="container" id="carousel" class="carousel">
-                                <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                                    <div class="row">
-                                        <div class="carousel-controls d-flex align-items-end">
-                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>                                            
-                                        </div>  
+                            <h4 class="pb-4">Testimonials</h4>
+                            <div id="slideshow-container" class="slideshow-container">
+                                <div class="slideshow-container__slides">
+                                  <div class="slideshow-container__text text-center">
+                                        <p>"If you want real marketing that works and effective implementation - web site's got you covered. I don't know what else to say."</p>
+                                        <p>Jenna Albion</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="col-sm-6">
-                                                <div class="testimonial-wrapepr">
-                                                    <div class="testimonial">
-                                                        "If you want real marketing that works and effective implementation - web site's got you covered. I don't know what else to say."
-                                                    </div>
-                                                    <div class="media">
-                                                        <div class="media-left d-flex mr-3">
-                                                            <img src="./img/female1.jpg" alt="female1">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <div class="overview">
-                                                                <div class="name"><b>Jenna Albion</b></div>
-                                                                <div class="details">Client</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="testimonial-wrapper">
-                                                    <div class="testimonial">
-                                                        "Definitely worth the investment. You've saved our business! Best. Product. Ever!"
-                                                    </div>
-                                                    <div class="media">
-                                                        <div class="media-left d-flex mr-3">
-                                                            <img src="./img/male1.jpg" alt="male1">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <div class="overview">
-                                                                <div class="name"><b>Rick Mick</b></div>
-                                                                <div class="details">Client</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="col-sm-6">
-                                                <div class="testimonial-wrapper">
-                                                    <div class="testimonial">
-                                                        "Web site is worth much more than I paid. Needless to say we are extremely satisfied with the results. Needless to say we are extremely satisfied with the results. The best on the net!"
-                                                    </div>
-                                                    <div class="media">
-                                                        <div class="media-left d-flex mr-3">
-                                                            <img src="./img/female2.jpg" alt="female2">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <div class="overview">
-                                                                <div class="name"><b>Alyson Stevens</b></div>
-                                                                <div class="details">Client</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="testimonial-wrapper">
-                                                    <div class="testimonial">
-                                                        "You've saved our business! Web site is awesome! Dude, your stuff is the bomb! It's just amazing. "
-                                                    </div>
-                                                    <div class="media">
-                                                        <div class="media-left d-flex mr-3">
-                                                            <img src="./img/male2.jpg" alt="male2">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <div class="overview">
-                                                                <div class="name"><b>Alex Romanov</b></div>
-                                                                <div class="details">Client</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>    
+                                <div class="slideshow-container__slides">
+                                    <div class="slideshow-container__text text-center">
+                                        <p>"Web site is worth much more than I paid. Needless to say we are extremely satisfied with the results. Needless to say we are extremely satisfied with the results. The best on the net!"</p>
+                                        <p>Alyson Stevens</p>
+                                    </div>
                                 </div>
-                            </div>                        
-                        </div> -->
+                                <div class="slideshow-container__slides">
+                                    <div class="slideshow-container__text text-center">
+                                        <p>"Definitely worth the investment. You've saved our business! Best. Product. Ever!"</p>
+                                        <p>Mike Ross</p>
+                                    </div>
+                                </div>
+                                <div class="slideshow-container__slides">
+                                    <div class="slideshow-container__text text-center">
+                                        <p>"You've saved our business! Web site is awesome! Dude, your stuff is the bomb! It's just amazing."</p>
+                                        <p>Richard Benson</p>
+                                    </div>
+                                </div>
+                                <a class="slideshow-container__prev" onclick="plusSlides(-1,'slide-right')">
+                                    <ion-icon name="arrow-back-outline"></ion-icon>
+                                </a>
+                                <a class="slideshow-container__next" onclick="plusSlides(1,'slide-left')">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
                     <div class="row pb-5">
                         <h4>Fun Facts</h4>
                     </div>
@@ -528,30 +459,6 @@
             </section>
         </div>
     </div>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
