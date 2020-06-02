@@ -31,7 +31,7 @@
 
 // Page transitions
 
-const swup = new Swup();
+
 
 
 // Testimonials Carousel
@@ -76,8 +76,5 @@ function filterSelection(c) {
     }
 }
 
-
-
-
-
+// Contact page
 
