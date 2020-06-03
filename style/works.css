@@ -66,6 +66,7 @@
     transition: opacity 0.35s, transform 0.45s;
     -webkit-transform: translate3d(-10px,0,0);
     transform: translate3d(-10px,0,0);
+    text-decoration: none;
   }
   
   .hovereffect:hover img {
