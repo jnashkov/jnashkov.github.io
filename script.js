@@ -2,7 +2,7 @@
 
 // Text Effect
 document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = ['I am passionate developer.', 'I am creative designer.'];
+    let dataText = ['I am passionate developer.', 'I am creative designer.'];
     function typeWriter(text, i, fnCallback) {
       if (i < (text.length)) {
        document.querySelector("p").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
