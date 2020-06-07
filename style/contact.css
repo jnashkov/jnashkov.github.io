@@ -1,6 +1,6 @@
 .contact-icon {
     font-size: 32px;
-    color: #fd0078;
+    color: #D90429;
 }
 
 .social-icons {
@@ -9,6 +9,21 @@
 
 .about-icon {
     font-size: 32px;
-    color: #fd0078;
+    color: #D90429;
 }
 
+.contact-danger {
+    width: 100%;
+	border-color: #D90429;
+	background-color: white;
+	color: #D90429;
+}
+
+.contact-danger:hover {
+	background: #D90429;
+	color: #EDF2F4;
+}
+
+input:focus {
+    border-color: #D90429;
+}
