@@ -1,77 +1,3 @@
-// Front Page
-
-// Text Effect
-document.addEventListener('DOMContentLoaded',function(event){
-    let dataText = ['I am passionate developer.', 'I am creative designer.'];
-    function typeWriter(text, i, fnCallback) {
-      if (i < (text.length)) {
-       document.querySelector("p").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
-        setTimeout(function() {
-          typeWriter(text, i + 1, fnCallback)
-        }, 100);
-      }
-      else if (typeof fnCallback == 'function') {
-        setTimeout(fnCallback, 700);
-      }
-    }
-     function StartTextAnimation(i) {
-       if (typeof dataText[i] == 'undefined'){
-          setTimeout(function() {
-            StartTextAnimation(0);
-          }, 1000);
-       }
-      if (i < dataText[i].length) {
-       typeWriter(dataText[i], 0, function(){
-         StartTextAnimation(i + 1);
-       });
-      }
-    }
-    StartTextAnimation(0);
-  });
-
-
-
-
-// animations
-
-// let animateAbout = document.getElementById('about');
-// animateAbout.addEventListener('click', function(){
-//     // const element = document.querySelector('#about');
-//     // element.classList.add('animate__animated', 'animate__bounceIn');
-//     animateCSS('#about', 'animate__slideInRight');
-// })
-
-// const animateCSS = (element, animation, prefix = 'animate__') =>
-//   // We create a Promise and return it
-//   new Promise((resolve, reject) => {
-//     const animationName = `${prefix}${animation}`;
-//     const node = document.querySelector(element);
-
-//     node.classList.add(`${prefix}animated`, animationName);
-
-//     // When the animation ends, we clean the classes and resolve the Promise
-//     function handleAnimationEnd() {
-//       node.classList.remove(`${prefix}animated`, animationName);
-//       node.removeEventListener('animationend', handleAnimationEnd);
-
-//       resolve('Animation ended');
-//     }
-
-//     node.addEventListener('animationend', handleAnimationEnd);
-//   });
-
-
-
-
-// Page transitions
-
-
-
-
-// Main Content
-
-
-
 // Testimonials Carousel
 
 let slideIndex = 1;
@@ -83,7 +9,6 @@ function plusSlides(n, animate) {
 
 function showSlides(n,animate) {
   let i;
-  //let slides = document.getElementsByClassName("mySlides");
   let slides = document.getElementById("slideshow-container").getElementsByClassName('slideshow-container__slides');
 
   if (n > slides.length) {
@@ -101,9 +26,6 @@ function showSlides(n,animate) {
   slides[slideIndex - 1].classList.remove('slide-right');
   slides[slideIndex - 1].classList.add(animate);
 }
-
-
-
 
 // Works - Filter projects
 
@@ -141,6 +63,6 @@ function filterSelection(c) {
     }
 }
 
-// Contact page
+
 
 

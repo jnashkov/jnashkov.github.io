@@ -12,25 +12,33 @@
     <link rel="stylesheet" href="./style/services.css">
     <link rel="stylesheet" href="./style/works.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="scripts/modernizer.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="home-page">
+    <div id="splitlayout" class="splitlayout">
         <div class="splitscreen d-md-flex h-md-100 align-items-center">
-            <div class="splitscreen-left col-md-6 p-0 bg-secondary h-md-100">
-                <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+            <div class="side split-left col-md-6 p-0 h-md-100" id="split-left">
+                <div class="splitscreen-content text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
                     <div class="logo-side pt-5 pb-5">                        
                         <img class="rounded-circle mb-5" src="img/profile.jpg" alt="myself" width="150" height="150">                        
                         <div class="mb-5">
-                            <p id="animated-text">Hello, I am Jovan Nashkov</p>
+                            <div id="typed-strings">
+                                <p>I am <strong>JOVAN NASHKOV.</strong></p>
+                                <p>I am <strong>creative web designer.</strong></p>
+                                <p>I am <strong>passionate developer.</strong></p>
+                            </div>
+                            <span id="typed"></span>
                         </div>
-                        <button type="button" class="btn btn-outline-danger">Downlaod CV</button>
-                        <button type="button" class="btn btn-outline-danger">Contact Me</button>
+                        <button type="button" class="btn danger mr-3">Downlaod CV</button>
+                        <button type="button" class="btn danger">Contact Me</button>
                     </div>  
                 </div>
             </div>
-            <div class="splitscreen-right col-md-6 p-0 bg-light h-md-100">
-                <div class="text-dark d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+            <div class="side split-right col-md-6 p-0 bg-light h-md-100" id="split-right">
+                <div class="splitscreen-content text-dark d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
                     <div class="menu-side pt-5 pb-5">
                         <ul id="menu" class="menu-list text-uppercase">
                             <li class="menu-item">
@@ -56,415 +64,430 @@
                 </div>
             </div>
         </div>
-        <div class="main-content">
-            <section class="p-5 about animate__animated animate__slideInRight" id="about">
-                <div class="container shadow p-5">
-                    <div class="row pb-5">
-                        <h2 class="border-bottom pb-5 w-100">About Me</h2>
-                    </div>
-                    <div class="row pb-5">
-                        <div class="col-md-4 p-3 border">
-                            <img class="" src="./img/profile2.jpg" alt="some image" width="100%" height="100%"> 
+        <div class="page page-right">
+            <div class="page-inner">
+                <section class="p-5 about" id="about">
+                    <div class="container shadow p-5">
+                        <div class="row pb-5">
+                            <h2 class="border-bottom pb-5 w-100">About Me</h2>
                         </div>
-                        <div class="col-md-8">
-                            <div>
-                                <h4>I'm Jovan Nashkov</h4>
-                                <h4 class="pb-2">Creative web designer</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero earum reiciendis molestiae maxime veniam, 
-                                    itaque ut molestias labore nobis, error minima deleniti modi. Autem hic in magni tempore accusamus nam.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quia molestiae dolores accusantium nihil?
-                                    Facere, ipsum sequi! Distinctio atque aspernatur rerum et. Assumenda repellendus obcaecati odit harum ullam aperiam quis.</p>
-                                <div class="social-icons pt-2 pb-5">
-                                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
-                                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                                </div>
+                        <div class="row pb-5">
+                            <div class="col-md-4 p-3 border">
+                                <img class="" src="./img/profile2.jpg" alt="some image" width="100%" height="100%"> 
                             </div>
-                        </div>
-                    </div>
-                    <div class="row pb-5">
-                        <div class="col-md-6">
-                            <div class="skills">
-                                <h4>My Skills</h4>   
-                                <div class="skill">
-                                    <span>Linux</span>
-                                    <span class="float-right">55%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>    
-                                
-                                <div class="skill">
-                                    <span>Javascript</span>
-                                    <span class="float-right">25%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span>Angular</span>
-                                    <span class="float-right">35%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>                            
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="languages">
-                                <h4>Languages</h4>
-                                <div class="language">
-                                    <span>English</span>
-                                    <span class="float-right">75%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="language">
-                                    <span>Spanish</span>
-                                    <span class="float-right">25%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="language">
-                                    <span>German</span>
-                                    <span class="float-right">15%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="col-md-8">
+                                <div>
+                                    <h4>I'm Jovan Nashkov</h4>
+                                    <h4 class="pb-2">Creative web designer</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero earum reiciendis molestiae maxime veniam, 
+                                        itaque ut molestias labore nobis, error minima deleniti modi. Autem hic in magni tempore accusamus nam.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quia molestiae dolores accusantium nihil?
+                                        Facere, ipsum sequi! Distinctio atque aspernatur rerum et. Assumenda repellendus obcaecati odit harum ullam aperiam quis.</p>
+                                    <div class="social-icons pt-2 pb-5">
+                                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                                        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row pb-5">
-                        <div class="container">
-                            <h4 class="pb-4">Testimonials</h4>
-                            <div id="slideshow-container" class="slideshow-container">
-                                <div class="slideshow-container__slides">
-                                  <div class="slideshow-container__text text-center">
-                                        <p>"If you want real marketing that works and effective implementation - web site's got you covered. I don't know what else to say."</p>
-                                        <p>Jenna Albion</p>
+                        <div class="row pb-5">
+                            <div class="col-md-6">
+                                <div class="skills">
+                                    <h4>My Skills</h4>   
+                                    <div class="skill">
+                                        <span>Linux</span>
+                                        <span class="float-right">55%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>    
+                                    
+                                    <div class="skill">
+                                        <span>Javascript</span>
+                                        <span class="float-right">25%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Angular</span>
+                                        <span class="float-right">35%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>                            
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="languages">
+                                    <h4>Languages</h4>
+                                    <div class="language">
+                                        <span>English</span>
+                                        <span class="float-right">75%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="language">
+                                        <span>Spanish</span>
+                                        <span class="float-right">25%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="language">
+                                        <span>German</span>
+                                        <span class="float-right">15%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="slideshow-container__slides">
+                            </div>
+                        </div>
+                        <div class="row pb-5">
+                            <div class="container">
+                                <h4 class="pb-4">Testimonials</h4>
+                                <div id="slideshow-container" class="slideshow-container">
+                                    <div class="slideshow-container__slides">
                                     <div class="slideshow-container__text text-center">
-                                        <p>"Web site is worth much more than I paid. Needless to say we are extremely satisfied with the results. Needless to say we are extremely satisfied with the results. The best on the net!"</p>
-                                        <p>Alyson Stevens</p>
+                                            <p>"If you want real marketing that works and effective implementation - web site's got you covered. I don't know what else to say."</p>
+                                            <p>Jenna Albion</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="slideshow-container__slides">
-                                    <div class="slideshow-container__text text-center">
-                                        <p>"Definitely worth the investment. You've saved our business! Best. Product. Ever!"</p>
-                                        <p>Mike Ross</p>
+                                    <div class="slideshow-container__slides">
+                                        <div class="slideshow-container__text text-center">
+                                            <p>"Web site is worth much more than I paid. Needless to say we are extremely satisfied with the results. Needless to say we are extremely satisfied with the results. The best on the net!"</p>
+                                            <p>Alyson Stevens</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="slideshow-container__slides">
-                                    <div class="slideshow-container__text text-center">
-                                        <p>"You've saved our business! Web site is awesome! Dude, your stuff is the bomb! It's just amazing."</p>
-                                        <p>Richard Benson</p>
+                                    <div class="slideshow-container__slides">
+                                        <div class="slideshow-container__text text-center">
+                                            <p>"Definitely worth the investment. You've saved our business! Best. Product. Ever!"</p>
+                                            <p>Mike Ross</p>
+                                        </div>
                                     </div>
+                                    <div class="slideshow-container__slides">
+                                        <div class="slideshow-container__text text-center">
+                                            <p>"You've saved our business! Web site is awesome! Dude, your stuff is the bomb! It's just amazing."</p>
+                                            <p>Richard Benson</p>
+                                        </div>
+                                    </div>
+                                    <a class="slideshow-container__prev" onclick="plusSlides(-1,'slide-right')">
+                                        <ion-icon name="arrow-back-outline"></ion-icon>
+                                    </a>
+                                    <a class="slideshow-container__next" onclick="plusSlides(1,'slide-left')">
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    </a>
                                 </div>
-                                <a class="slideshow-container__prev" onclick="plusSlides(-1,'slide-right')">
-                                    <ion-icon name="arrow-back-outline"></ion-icon>
-                                </a>
-                                <a class="slideshow-container__next" onclick="plusSlides(1,'slide-left')">
-                                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                                </a>
+                            </div>
+                        </div>
+                        <div class="row pb-5">
+                            <h4>Fun Facts</h4>
+                        </div>
+                        <div class="row pb-5 text-center align-items-center">                                           
+                            <div class="col-md-3 p-3 border">
+                                <ion-icon class="about-icon" name="happy-outline"></ion-icon>
+                                <h3>150</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="col-md-3 p-3 border">
+                                <ion-icon class="about-icon" name="briefcase-outline"></ion-icon>
+                                <h3>10</h3>
+                                <p>years Experience</p>
+                            </div>
+                            <div class="col-md-3 p-3 border">
+                                <ion-icon class="about-icon" name="ribbon-outline"></ion-icon>
+                                <h3>10</h3>
+                                <p>Awards Won</p>
+                            </div>
+                            <div class="col-md-3 p-3 border">
+                                <ion-icon class="about-icon" name="thumbs-up-outline"></ion-icon>
+                                <h3>300</h3>
+                                <p>Projects Done</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row pb-5">
-                        <h4>Fun Facts</h4>
-                    </div>
-                    <div class="row pb-5 text-center align-items-center">                                           
-                        <div class="col-md-3 p-3 border">
-                            <ion-icon class="about-icon" name="happy-outline"></ion-icon>
-                            <h3>150</h3>
-                            <p>Happy Clients</p>
+                </section>
+                <section class="p-5 resume" id="resume">
+                    <div class="container shadow p-5">
+                        <div class="row pb-5">
+                            <h2 class="border-bottom pb-5 w-100">My resume</h2>
                         </div>
-                        <div class="col-md-3 p-3 border">
-                            <ion-icon class="about-icon" name="briefcase-outline"></ion-icon>
-                            <h3>10</h3>
-                            <p>years Experience</p>
+                        <div class="row pb-5">
+                            <div class="col-md-6">
+                                <h3>Education</h3>
+                                <ul class="timeline">
+                                    <li>
+                                        <a>Lorem, ipsum dolor.</a>
+                                        <a class="float-right">2015</a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. </p>
+                                    </li>
+                                    <li>
+                                        <a>Lorem, ipsum dolor.</a>
+                                        <a class="float-right">2014</a>
+                                        <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                                    </li>
+                                    <li>
+                                        <a>Lorem, ipsum dolor.</a>
+                                        <a class="float-right">2011</a>
+                                        <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Experience</h3>
+                                <ul class="timeline">
+                                    <li>
+                                        <a>Lorem, ipsum dolor.</a>
+                                        <a class="float-right">2018</a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                                    </li>
+                                    <li>
+                                        <a>Lorem, ipsum dolor.</a>
+                                        <a class="float-right">2017</a>
+                                        <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+                                    </li>
+                                    <li>
+                                        <a>Lorem, ipsum dolor.</a>
+                                        <a class="float-right">2016</a>
+                                        <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-3 p-3 border">
-                            <ion-icon class="about-icon" name="ribbon-outline"></ion-icon>
-                            <h3>10</h3>
-                            <p>Awards Won</p>
-                        </div>
-                        <div class="col-md-3 p-3 border">
-                            <ion-icon class="about-icon" name="thumbs-up-outline"></ion-icon>
-                            <h3>300</h3>
-                            <p>Projects Done</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="p-5 resume" id="resume">
-                <div class="container shadow p-5">
-                    <div class="row pb-5">
-                        <h2 class="border-bottom pb-5 w-100">My resume</h2>
-                    </div>
-                    <div class="row pb-5">
-                        <div class="col-md-6">
-                            <h3>Education</h3>
-                            <ul class="timeline">
-                                <li>
-                                    <a>Lorem, ipsum dolor.</a>
-                                    <a class="float-right">2015</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. </p>
-                                </li>
-                                <li>
-                                    <a>Lorem, ipsum dolor.</a>
-                                    <a class="float-right">2014</a>
-                                    <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
-                                </li>
-                                <li>
-                                    <a>Lorem, ipsum dolor.</a>
-                                    <a class="float-right">2011</a>
-                                    <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Experience</h3>
-                            <ul class="timeline">
-                                <li>
-                                    <a>Lorem, ipsum dolor.</a>
-                                    <a class="float-right">2018</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                                </li>
-                                <li>
-                                    <a>Lorem, ipsum dolor.</a>
-                                    <a class="float-right">2017</a>
-                                    <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
-                                </li>
-                                <li>
-                                    <a>Lorem, ipsum dolor.</a>
-                                    <a class="float-right">2016</a>
-                                    <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
-                </div>
-            </section>
-            <section class="p-5 services" id="services">
-                <div class="container shadow p-5">
-                    <div class="row pb-5">
-                        <h2 class="border-bottom pb-5 w-100">Services</h2>
                     </div>
-                    <div class="row pb-5">
-                        <div class="col-md-6">
-                            <div class="service">
-                                <div class="icon">
-                                    <img class="pb-3" src="./img/serv-1.png">
-                                </div>
-                                <div class="content">
-                                    <h4 class="pb-3">Web Design</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
-                                </div>
-                            </div>
-                            <div class="service">
-                                <div class="icon">
-                                    <img class="pb-3" src="./img/serv-2.png">
-                                </div>
-                                <div class="content">
-                                    <h4 class="pb-3">Brand Building</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
-                                </div>
-                            </div>
-                            <div class="service">
-                                <div class="icon">
-                                    <img class="pb-3" src="./img/serv-3.png">
-                                </div>
-                                <div class="content">
-                                    <h4 class="pb-3">Mobile Apps</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
-                                </div>
-                            </div>
+                </section>
+                <section class="p-5 services" id="services">
+                    <div class="container shadow p-5">
+                        <div class="row pb-5">
+                            <h2 class="border-bottom pb-5 w-100">Services</h2>
                         </div>
-                        <div class="col-md-6">
-                            <div class="service">
-                                <div class="icon">
-                                    <img class="pb-3" src="./img/serv-4.png">
+                        <div class="row pb-5">
+                            <div class="col-md-6">
+                                <div class="service">
+                                    <div class="icon">
+                                        <img class="pb-3" src="./img/serv-1.png">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="pb-3">Web Design</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <h4 class="pb-3">Development</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
+                                <div class="service">
+                                    <div class="icon">
+                                        <img class="pb-3" src="./img/serv-2.png">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="pb-3">Brand Building</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="service">
-                                <div class="icon">
-                                    <img class="pb-3" src="./img/serv-5.png">
-                                </div>
-                                <div class="content">
-                                    <h4 class="pb-3">Clean Code</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
-                                </div>
-                            </div>
-                            <div class="service">
-                                <div class="icon">
-                                    <img class="pb-3" src="./img/serv-6.png">
-                                </div>
-                                <div class="content">
-                                    <h4 class="pb-3">Retina Ready</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="p-5 works" id="works">
-                <div class="container shadow p-5">
-                    <h2 class="border-bottom pb-5 w-100">Portfolio</h2>
-                    <div id="buttons" class="m-2 pt-3 pb-3">
-                        <button type="button" class="btn btn-link active text-decoration-none" onclick="filterSelection('all')">All</button>
-                        <button type="button" class="btn btn-link text-decoration-none" onclick="filterSelection('coding')">Coding</button>
-                        <button type="button" class="btn btn-link text-decoration-none" onclick="filterSelection('design')">Design</button>
-                        <button type="button" class="btn btn-link text-decoration-none" onclick="filterSelection('logo')">Logo</button>
-                    </div>
-                    <div class="card-columns align-items-center">
-                        <div class="hovereffect mb-4" category="coding">
-                            <img class="img-responsive" src="./img/work-1.jpg" alt="">
-                            <div class="overlay">
-                                <p><a href="#">SHOW CODE</a></p>
-                            </div>
-                        </div> 
-                        <div class="hovereffect mb-4" category="coding">
-                            <img class="img-responsive" src="./img/work-2.jpg" alt="">
-                            <div class="overlay">
-                                <p><a href="#">SHOW CODE</a></p>
-                            </div>
-                        </div> 
-                        <div class="hovereffect mb-4" category="design">
-                            <img class="img-responsive" src="./img/work-3.jpg" alt="">
-                            <div class="overlay">
-                                <p><a href="#">SHOW CODE</a></p>
-                            </div>
-                        </div> 
-                        <div class="hovereffect mb-4" category="design">
-                            <img class="img-responsive" src="./img/work-4.jpg" alt="">
-                            <div class="overlay">
-                                <p><a href="#">SHOW CODE</a></p>
-                            </div>
-                        </div> 
-                        <div class="hovereffect mb-4" category="logo">
-                            <img class="img-responsive" src="./img/work-5.jpg" alt="">
-                            <div class="overlay">
-                                <p><a href="#">SHOW CODE</a></p>
-                            </div>
-                        </div> 
-                        <div class="hovereffect mb-4" category="logo">
-                            <img class="img-responsive" src="./img/work-6.jpg" alt="">
-                            <div class="overlay">
-                                <p><a href="#">SHOW CODE</a></p>
-                            </div>
-                        </div> 
-                    </div>   
-                </div>
-            </section>
-            <section class="p-5 news" id="news">
-                <div class="container shadow p-5">
-                    <h2 class="border-bottom pb-5 w-100">My Blog</h2>
-                    <div class="row pt-5 align-items-center text-center">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="card mb-4">
-                                <a href="#">
-                                  <img src="img/news1.jpg" class="card-img-top" alt="">  
-                                </a>
-                                <div class="card-body">
-                                  <h6 class="card-title">Card title</h6>
-                                  <a href="#">Go somewhere</a>
+                                <div class="service">
+                                    <div class="icon">
+                                        <img class="pb-3" src="./img/serv-3.png">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="pb-3">Mobile Apps</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card mb-4">
-                                <a href="#">
-                                  <img src="img/news2.jpg" class="card-img-top" alt="">  
-                                </a>
-                                <div class="card-body">
-                                  <h6 class="card-title">Card title</h6>
-                                  <a href="#">Go somewhere</a>
+                            <div class="col-md-6">
+                                <div class="service">
+                                    <div class="icon">
+                                        <img class="pb-3" src="./img/serv-4.png">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="pb-3">Development</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="card mb-4">
-                                <a href="#">
-                                  <img src="img/news3.jpg" class="card-img-top" alt="">  
-                                </a>
-                                <div class="card-body">
-                                  <h6 class="card-title">Card title</h6>
-                                  <a href="#">Go somewhere</a>
+                                <div class="service">
+                                    <div class="icon">
+                                        <img class="pb-3" src="./img/serv-5.png">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="pb-3">Clean Code</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card mb-4">
-                                <a href="#">
-                                  <img src="img/news4.jpg" class="card-img-top" alt="">  
-                                </a>
-                                <div class="card-body">
-                                  <h6 class="card-title">Card title</h6>
-                                  <a href="#">Go somewhere</a>
+                                <div class="service">
+                                    <div class="icon">
+                                        <img class="pb-3" src="./img/serv-6.png">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="pb-3">Retina Ready</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam?</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row pt-5 align-items-center justify-content-center">
-                        <button type="button" class="btn btn-outline-danger">Show More</button>
+                </section>
+                <section class="p-5 works" id="works">
+                    <div class="container shadow p-5">
+                        <h2 class="border-bottom pb-5 w-100">Portfolio</h2>
+                        <div id="buttons" class="m-2 pt-3 pb-3">
+                            <button type="button" class="btn btn-link active text-decoration-none" onclick="filterSelection('all')">All</button>
+                            <button type="button" class="btn btn-link text-decoration-none" onclick="filterSelection('coding')">Coding</button>
+                            <button type="button" class="btn btn-link text-decoration-none" onclick="filterSelection('design')">Design</button>
+                            <button type="button" class="btn btn-link text-decoration-none" onclick="filterSelection('logo')">Logo</button>
+                        </div>
+                        <div class="card-columns align-items-center">
+                            <div class="hovereffect mb-4" category="coding">
+                                <img class="img-responsive" src="./img/work-1.jpg" alt="">
+                                <div class="overlay">
+                                    <p><a href="#">SHOW CODE</a></p>
+                                </div>
+                            </div> 
+                            <div class="hovereffect mb-4" category="coding">
+                                <img class="img-responsive" src="./img/work-2.jpg" alt="">
+                                <div class="overlay">
+                                    <p><a href="#">SHOW CODE</a></p>
+                                </div>
+                            </div> 
+                            <div class="hovereffect mb-4" category="design">
+                                <img class="img-responsive" src="./img/work-3.jpg" alt="">
+                                <div class="overlay">
+                                    <p><a href="#">SHOW CODE</a></p>
+                                </div>
+                            </div> 
+                            <div class="hovereffect mb-4" category="design">
+                                <img class="img-responsive" src="./img/work-4.jpg" alt="">
+                                <div class="overlay">
+                                    <p><a href="#">SHOW CODE</a></p>
+                                </div>
+                            </div> 
+                            <div class="hovereffect mb-4" category="logo">
+                                <img class="img-responsive" src="./img/work-5.jpg" alt="">
+                                <div class="overlay">
+                                    <p><a href="#">SHOW CODE</a></p>
+                                </div>
+                            </div> 
+                            <div class="hovereffect mb-4" category="logo">
+                                <img class="img-responsive" src="./img/work-6.jpg" alt="">
+                                <div class="overlay">
+                                    <p><a href="#">SHOW CODE</a></p>
+                                </div>
+                            </div> 
+                        </div>   
                     </div>
-                </div>
-            </section>
-            <section class="p-5 contact" id="contact">
-                <div class="container shadow p-5 h-100">
-                    <div class="row pb-5">
-                        <h2 class="border-bottom pb-5 w-100">Contact Me</h2>
-                    </div>
-                    <div class="row p-5">
-                        <div class="col-md-5">
-                            <h3 class="pb-5">Location</h3>
-                            <div class="embed-responsive embed-responsive-21by9">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11913.305840699062!2d21.775058275683293!3d41.71347381166162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1smk!2smk!4v1589730907722!5m2!1smk!2smk" 
-                                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </section>
+                <section class="p-5 news" id="news">
+                    <div class="container shadow p-5">
+                        <h2 class="border-bottom pb-5 w-100">My Blog</h2>
+                        <div class="row pt-5 align-items-center text-center">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="card mb-4">
+                                    <a href="#">
+                                    <img src="img/news1.jpg" class="card-img-top" alt="">  
+                                    </a>
+                                    <div class="card-body">
+                                    <h6 class="card-title">Card title</h6>
+                                    <a href="#">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <a href="#">
+                                    <img src="img/news2.jpg" class="card-img-top" alt="">  
+                                    </a>
+                                    <div class="card-body">
+                                    <h6 class="card-title">Card title</h6>
+                                    <a href="#">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="card mb-4">
+                                    <a href="#">
+                                    <img src="img/news3.jpg" class="card-img-top" alt="">  
+                                    </a>
+                                    <div class="card-body">
+                                    <h6 class="card-title">Card title</h6>
+                                    <a href="#">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <a href="#">
+                                    <img src="img/news4.jpg" class="card-img-top" alt="">  
+                                    </a>
+                                    <div class="card-body">
+                                    <h6 class="card-title">Card title</h6>
+                                    <a href="#">Go somewhere</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-7">
-                            <h3 class="pb-5">Contact Form</h3>
-                            <form id="form" class="form">
-                                <input type="text" class="form-control mb-3" name="name" placeholder="Your Name" required>
-                                <input type="email" class="form-control mb-3" name="email" placeholder="E-Mail" required>
-                                <textarea class="form-control mb-3" placeholder="Message" required></textarea>
-                                <button type="submit" class="btn btn-outline-danger">Send Message</button>
-                            </form>
+                        <div class="row pt-5 align-items-center justify-content-center">
+                            <button type="button" class="btn btn-outline-danger">Show More</button>
                         </div>
                     </div>
-                    <div class="row align-items-center text-center">
-                        <div class="col-md-4">
-                            <ion-icon class="contact-icon" name="location-outline"></ion-icon>
-                            <p>Veles, MK</p>
+                </section>
+                <section class="p-5 contact" id="contact">
+                    <div class="container shadow p-5 h-100">
+                        <div class="row pb-5">
+                            <h2 class="border-bottom pb-5 w-100">Contact Me</h2>
                         </div>
-                        <div class="col-md-4">
-                            <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
-                            <p>text@example.com</p>
+                        <div class="row p-5">
+                            <div class="col-md-5">
+                                <h3 class="pb-5">Location</h3>
+                                <div class="embed-responsive embed-responsive-21by9">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11913.305840699062!2d21.775058275683293!3d41.71347381166162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1smk!2smk!4v1589730907722!5m2!1smk!2smk" 
+                                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="pb-5">Contact Form</h3>
+                                <form id="form" class="form">
+                                    <input type="text" class="form-control mb-3" name="name" placeholder="Your Name" required>
+                                    <input type="email" class="form-control mb-3" name="email" placeholder="E-Mail" required>
+                                    <textarea class="form-control mb-3" placeholder="Message" required></textarea>
+                                    <button type="submit" class="btn btn-outline-danger">Send Message</button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <ion-icon class="contact-icon" name="call-outline"></ion-icon>
-                            <p>+123 456 789</p>
+                        <div class="row align-items-center text-center">
+                            <div class="col-md-4">
+                                <ion-icon class="contact-icon" name="location-outline"></ion-icon>
+                                <p>Veles, MK</p>
+                            </div>
+                            <div class="col-md-4">
+                                <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
+                                <p>text@example.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <ion-icon class="contact-icon" name="call-outline"></ion-icon>
+                                <p>+123 456 789</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
+        <a href="#" class="back back-left" title="back to home">&larr;</a>
     </div>
+    
+    
+    
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="scripts/classie.js"></script>
+    <script src="scripts/splitlayout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings',
+          loop: true,
+          backSpeed: 40,
+          typeSpeed: 40
+        });
+      </script>
     <script src="script.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
