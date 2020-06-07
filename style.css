@@ -90,6 +90,10 @@ ul a {
 	color: #EDF2F4;
 }
 
+.menu-side .menu-list li.active > a {
+	color: #D90429;
+}
+
 /*  Split layout effects   */
 
 .splitlayout {

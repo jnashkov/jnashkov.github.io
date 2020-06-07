@@ -63,6 +63,29 @@ function filterSelection(c) {
     }
 }
 
+// Nav links active state
 
+(function (){
+  for (const link of document.querySelectorAll('#menu-side>ul>li>a')) {
+      link.addEventListener('click',setActiveState);
+  }
+})()
+
+function setActiveState(){
+  for (const link of document.querySelectorAll('#menu-side>ul>li>a')) {
+      //link.parentElement.classList = "nav-item";
+      link.parentElement.classList.remove("active");
+  }
+
+  //this.parentElement.classList = "nav-item active";
+  this.parentElement.classList.add("active");
+}
+
+
+let mainNavLinks = document.querySelectorAll("#menu-side ul li a");
+let mainSections = document.querySelectorAll(".page-inner section");
+
+let lastId;
+let cur = [];
 
 
