@@ -9,16 +9,19 @@
       column-count: 1;
     }
 }
-  @media (min-width:768px) {
+
+@media (min-width:768px) {
     .card-columns .news {
       column-count: 2;
     }
 }
+
 @media (min-width:992px) {
     .card-columns .news {
       column-count: 2;
     }
 }
+
 @media (min-width:1200px) {
     .card-columns .news {
       column-count: 4;
@@ -36,4 +39,15 @@
 
 .news .card .card-body h6 {
     color: #D90429;
+}
+
+/* .show-more {
+
+} */
+
+.show-more:disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  box-shadow: none;
 }

@@ -73,14 +73,23 @@ function filterSelection(c) {
 
 function setActiveState(){
   for (const link of document.querySelectorAll('#menu-side>ul>li>a')) {
-      //link.parentElement.classList = "nav-item";
       link.parentElement.classList.remove("active");
   }
-
-  //this.parentElement.classList = "nav-item active";
   this.parentElement.classList.add("active");
 }
 
+function toggleSection() {
+  let sections = document.querySelectorAll('section');
+  for(section of sections) {
+    if(section.getAttribute('category') == c) {
+      section.classList.remove('d-none');
+      section.classList.add('d-block');
+    } else {
+      section.classList.remove('d-block');
+      section.classList.add('d-none');
+    }
+  }
+}
 
 let mainNavLinks = document.querySelectorAll("#menu-side ul li a");
 let mainSections = document.querySelectorAll(".page-inner section");
@@ -88,4 +97,30 @@ let mainSections = document.querySelectorAll(".page-inner section");
 let lastId;
 let cur = [];
 
+// Hide sections on click
 
+// let sections = [ 'about', 'resume', 'services', 'works', 'news', 'contact' ];
+// function toggle(layer) {
+//     let s
+//     for(let i = 0; i < sections.length; i += 1) {
+//         s = document.getElementById(sections[i]);
+//         s.style.display = 'none';
+//     }
+//     s = document.getElementById(layer);
+//     s.style.display = '';
+// }
+
+// let sections = [ 'about', 'resume', 'services', 'works', 'news', 'contact'];
+// function toggle(layer) {
+//   let s;
+//   for(let i = 0; i < sections.length; i +=1 ) {
+//     s = document.getElementById(sections[i]);
+//     s.classList.add('d-none');
+//   }
+//   s = document.getElementById(layer);
+//   s.classList.remove('d-none');
+// }
+
+// disable news to blog button
+let showMore = document.querySelector('.show-more');
+showMore.disabled = true;
